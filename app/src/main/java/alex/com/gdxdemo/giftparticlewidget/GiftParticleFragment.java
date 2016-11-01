@@ -65,7 +65,7 @@ public class GiftParticleFragment extends AndroidFragmentApplication implements 
             case GiftParticleContants.GIFT_PARTICLETYPE_FIRE:
                 particleEffectView.Add(pathstring,
                         dur,
-                        GiftParticleEffectView.ParticleType.PARTICLE_TYPE_FIRE,
+                        GiftParticleEffectView.ParticleType.PARTICLE_TYPE_WATER,
                         GiftParticleEffectView.ParticleAnimationType.ANIMATION_TYPE_NULL,
                         isLand);
 

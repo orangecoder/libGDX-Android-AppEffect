@@ -34,8 +34,8 @@ dependencies {
     compile 'com.facebook.rebound:rebound:0.3.6'
     compile files('libs/gdx.jar')
     compile files('libs/gdx-backend-android.jar')
-    compile files('libs/gdx-natives.jar')
+//    compile files('libs/gdx-natives.jar')
     compile files('libs/gdx-box2d.jar')
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile files('libs/gdxlite.jar')
+//    compile files('libs/gdxlite.jar')
 }

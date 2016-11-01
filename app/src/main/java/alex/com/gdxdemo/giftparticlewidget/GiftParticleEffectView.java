@@ -314,8 +314,8 @@ public class GiftParticleEffectView implements ApplicationListener {
 
 		} else if (type == ParticleAnimationType.ANIMATION_TYPE_BOX1) {
 
-			for (int i = 0; i <= 12; i++) {
-				mAssetManager.load("particle/boxone/frame" + i + ".png", Texture.class);
+			for (int i = 0; i <= 25; i++) {
+				mAssetManager.load("particle/love/frame" + i + ".png", Texture.class);
 			}
 
 		} else if (type == ParticleAnimationType.ANIMATION_TYPE_BOX2) {
@@ -540,14 +540,14 @@ public class GiftParticleEffectView implements ApplicationListener {
 	private void initResource(ParticleInfo particleInfo) {
 
 		if (particleInfo.animationType == ParticleAnimationType.ANIMATION_TYPE_BOX1) {
-			for (int i = 0; i <= 5; i++) {
-				TextureRegion temtex = new TextureRegion(mAssetManager.get("particle/boxone/frame" + i + ".png", Texture.class));
+			for (int i = 0; i <= 25; i++) {
+				TextureRegion temtex = new TextureRegion(mAssetManager.get("particle/love/frame" + i + ".png", Texture.class));
 				particleInfo.beginAnimTexList.add(temtex);
 			}
 			particleInfo.beginAnimation = new Animation(0.1f, particleInfo.beginAnimTexList);
 
-			for (int i = 5; i <= 12; i++) {
-				TextureRegion temtex = new TextureRegion(mAssetManager.get("particle/boxone/frame" + i + ".png", Texture.class));
+			for (int i = 0; i <= 25; i++) {
+				TextureRegion temtex = new TextureRegion(mAssetManager.get("particle/love/frame" + i + ".png", Texture.class));
 				particleInfo.endAnimTexList.add(temtex);
 			}
 			particleInfo.endAnimation = new Animation(0.08f, particleInfo.endAnimTexList);
